@@ -20,6 +20,7 @@ defmodule TypedStruct do
   defmacro __using__(_) do
     quote do
       import TypedStruct, only: [typedstruct: 1, typedstruct: 2]
+      alias __MODULE__, as: Parent
     end
   end
 
